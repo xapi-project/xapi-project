@@ -1,6 +1,3 @@
-xapi-project
-============
-
 The [xapi toolstack](http://www.xenproject.org/developers/teams/xapi.html)
 - manages clusters of Xen hosts as single entities
 - allows running VMs to be migrated between hosts (including with storage)
@@ -22,13 +19,13 @@ a sub-project of the Linux Foundation Xen Project.
 Contents
 --------
 
-- [Architecture](architecture/README.md): read about how the components of the
+- [Architecture](doc/architecture/README.md): read about how the components of the
   xapi toolstack work together
-- [Features](features/README.md): learn about the features supported by xapi and
+- [Features](doc/features/README.md): learn about the features supported by xapi and
   how they work.
-- [Xen API documentation]((https://xapi-project.github.io/xen-api/): explore
+- [Xen API documentation](https://xapi-project.github.io/xen-api/): explore
   the Xen API
-- [Futures](futures/README.md): find out how Xenopsd is likely to change and
+- [Futures](doc/futures/README.md): find out how Xenopsd is likely to change and
   how you can help.
 - [Github Wiki](https://github.com/xapi-project/xapi-project/wiki): explore the
   local wiki on github
