@@ -1,4 +1,6 @@
 The [xapi toolstack](http://www.xenproject.org/developers/teams/xapi.html)
+==========================================================================
+
 - manages clusters of Xen hosts as single entities
 - allows running VMs to be migrated between hosts (including with storage)
   with minimal downtime
@@ -25,7 +27,7 @@ Contents
   how they work.
 - [Xen API documentation](https://xapi-project.github.io/xen-api/): explore
   the Xen API
-- [Futures](doc/futures/README.md): find out how Xenopsd is likely to change and
+- [Futures](doc/futures/README.md): find out how the xapi toolstack is likely to change and
   how you can help.
 - [Github Wiki](https://github.com/xapi-project/xapi-project/wiki): explore the
   local wiki on github
