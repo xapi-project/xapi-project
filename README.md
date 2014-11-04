@@ -25,11 +25,26 @@ Contents
   xapi toolstack work together
 - [Features](doc/features/README.md): learn about the features supported by xapi and
   how they work.
+- [Designs](doc/designs/README.md): explore designs for cross-cutting features.
 - [Xen API documentation](https://xapi-project.github.io/xen-api/): explore
   the Xen API
 - [Futures](doc/futures/README.md): find out how the xapi toolstack is likely to change and
   how you can help.
-- [Github Wiki](https://github.com/xapi-project/xapi-project/wiki): explore the
-  local wiki on github
-- [Xen project Wiki](http://wiki.xenproject.org/wiki/XAPI): explore the xapi
-  section of the Xen wiki
+- [Xapi project](http://wiki.xenproject.org/wiki/XAPI): learn about the xapi project
+  on the Xen wiki
+
+Components
+----------
+
+- [Xenopsd](https://github.com/xapi-project/xenopsd/tree/master/doc): a low-level
+  "domain manager" which takes care of creating, suspending, resuming, migrating,
+  rebooting domains by interacting with Xen via libxc and libxl.
+- [Xcp-rrdd](https://github.com/xapi-project/xcp-rrdd/tree/master/doc): a
+  performance counter monitoring daemon which aggregates "datasources" defined
+  via a plugin API and records history for each.
+- [Xcp-networkd](https://github.com/xapi-project/xcp-networkd/tree/master/doc):
+  a host network manager which takes care of configuring interfaces, bridges
+  and OpenVSwitch instances
+- [SM](https://github.com/xapi-project/sm/tree/master/doc): Storage Manager
+  plugins which connect Xapi's internal storage interfaces to the control
+  APIs of external storage systems.
