@@ -57,10 +57,8 @@ drivers to be isolated in their own domains.
 
 The toolstack consists of a set of co-operating daemons, building on top of the
 basic set common to all Xen hosts. We have:
-- *xenconsoled*: allows access to guest consoles. This is common to all Xen
-  hosts
-- *xenstored*: a key-value pair configuration database for connecting VM
-  disks and network interfaces. This is also common to all hosts
+- [Xapi](https://github.com/xapi-project/xen-api/tree/master/doc): manages
+  clusters of hosts, co-ordinating access to shared storage and networking.
 - [Xenopsd](https://github.com/xapi-project/xenopsd/tree/master/doc): a low-level
   "domain manager" which takes care of creating, suspending, resuming, migrating,
   rebooting domains by interacting with Xen via libxc and libxl.
@@ -80,6 +78,10 @@ basic set common to all Xen hosts. We have:
 - *snapwatchd*: a daemon which responds to snapshot requests sent via an in-guest
   VSS agent (for Windows).
 - *stunnel*: a daemon which decodes TLS/SSL and forwards traffic to xapi.
+- *xenconsoled*: allows access to guest consoles. This is common to all Xen
+  hosts
+- *xenstored*: a key-value pair configuration database for connecting VM
+  disks and network interfaces. This is also common to all hosts
 
 All inter-daemon control within domain 0 takes place over named Unix domain sockets
 using a combination of json RPC and the XenAPI. Communication between Xen domains
