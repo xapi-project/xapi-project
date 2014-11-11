@@ -35,7 +35,8 @@ Contents
 
 Components
 ----------
-
+- [Xapi](https://github.com/xapi-project/xen-api/tree/master/doc): manages a cluster
+  of Xen hosts, co-ordinating access to network and storage.
 - [Xenopsd](https://github.com/xapi-project/xenopsd/tree/master/doc): a low-level
   "domain manager" which takes care of creating, suspending, resuming, migrating,
   rebooting domains by interacting with Xen via libxc and libxl.
@@ -45,6 +46,8 @@ Components
 - [Xcp-networkd](https://github.com/xapi-project/xcp-networkd/tree/master/doc):
   a host network manager which takes care of configuring interfaces, bridges
   and OpenVSwitch instances
+- [Squeezed](https://github.com/xapi-project/squeezed/tree/master/doc): a single
+  host ballooning daemon which "balances" memory between running VMs.
 - [SM](https://github.com/xapi-project/sm/tree/master/doc): Storage Manager
   plugins which connect Xapi's internal storage interfaces to the control
   APIs of external storage systems.
